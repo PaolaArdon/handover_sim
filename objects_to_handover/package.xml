@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>objects_to_handover</name>
+  <version>0.1.0</version>
+  <description>The objects_to_handover package</description>
+
+  <maintainer email="ardonppa@gmail.com">Paola Ardon</maintainer>
+
+  <license>BSD</license>
+  <url type="repository">https://github.com/CIR-KIT/human_detector.git</url>
+  <url type="bugtracker">https://github.com/CIR-KIT/human_detector/issues</url>
+  <author email="cirkit.infomation@gmail.com">CIR-KIT</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <exec_depend>gazebo_ros</exec_depend>
+  <exec_depend>xacro</exec_depend>
+
+</package>

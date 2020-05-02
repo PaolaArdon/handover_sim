@@ -1,0 +1,18 @@
+<launch>
+ 
+ <arg name="model" default="$(find objects_to_handover)/urdf/book.xacro"/>
+ <!-- <arg name="rvizconfig" default="$(find objects_to_handover)/rviz/urdf.rviz" /> -->
+
+<group ns="ns1">
+  <param name="robot_description" command="$(find xacro)/xacro --inorder $(arg model)" />
+
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" />
+  
+</group>
+
+<node pkg="tf" type="static_transform_publisher" name="laser" args="0.1 0 0 -1.57 3.14 3.14 1 r_gripper_r_finger_tip_link object 100"/>
+
+<!-- <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" required="true" /> -->
+
+</launch>

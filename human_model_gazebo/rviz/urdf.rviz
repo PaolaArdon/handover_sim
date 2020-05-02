@@ -1,0 +1,832 @@
+Panels:
+  - Class: rviz/Displays
+    Help Height: 78
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /Global Options1
+        - /Status1
+        - /RobotModel1
+        - /TF1
+        - /TF1/Frames1
+        - /InteractiveMarkers1
+      Splitter Ratio: 0.556195974
+    Tree Height: 769
+  - Class: rviz/Selection
+    Name: Selection
+  - Class: rviz/Tool Properties
+    Expanded:
+      - /2D Pose Estimate1
+      - /2D Nav Goal1
+      - /Publish Point1
+    Name: Tool Properties
+    Splitter Ratio: 0.588679016
+  - Class: rviz/Views
+    Expanded:
+      - /Current View1
+    Name: Views
+    Splitter Ratio: 0.5
+  - Class: rviz/Time
+    Experimental: false
+    Name: Time
+    SyncMode: 0
+    SyncSource: ""
+Toolbars:
+  toolButtonStyle: 2
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Alpha: 0.5
+      Cell Size: 1
+      Class: rviz/Grid
+      Color: 160; 160; 164
+      Enabled: false
+      Line Style:
+        Line Width: 0.0299999993
+        Value: Lines
+      Name: Grid
+      Normal Cell Count: 0
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Plane: XY
+      Plane Cell Count: 10
+      Reference Frame: <Fixed Frame>
+      Value: false
+    - Alpha: 0.5
+      Class: rviz/RobotModel
+      Collision Enabled: false
+      Enabled: true
+      Links:
+        All Links Enabled: true
+        Expand Joint Details: false
+        Expand Link Details: false
+        Expand Tree: false
+        Link Tree Style: Links in Alphabetic Order
+        armleft1_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        armleft2_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        armleft3_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        armright1_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        armright2_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        armright3_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        back_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        base:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        base_0:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        base_0_l:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        base_footprint:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        base_human_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        base_l:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        body_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        bodyleft_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        bodyright_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        chest_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        footleft_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        footright_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        front_left_steer_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        front_right_steer_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        handleft_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        handright_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        head_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        index_distal:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        index_distal_l:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        index_meta:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        index_meta_0:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        index_meta_0_l:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        index_meta_l:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        index_middle:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        index_middle_l:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        index_proximal:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        index_proximal_l:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        legleft1_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        legleft2_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        legleft3_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        legright1_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        legright2_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        legright3_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        middle_distal:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        middle_distal_l:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        middle_meta:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        middle_meta_0:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        middle_meta_0_l:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        middle_meta_l:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        middle_middle:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        middle_middle_l:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        middle_proximal:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        middle_proximal_l:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        pinky_distal:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        pinky_distal_l:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        pinky_meta:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        pinky_meta_0:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        pinky_meta_0_l:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        pinky_meta_l:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        pinky_middle:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        pinky_middle_l:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        pinky_proximal:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        pinky_proximal_l:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        rear_left_steer_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        rear_right_steer_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ring_distal:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ring_distal_l:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ring_meta:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        ring_meta_0:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ring_meta_0_l:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ring_meta_l:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        ring_middle:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ring_middle_l:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ring_proximal:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ring_proximal_l:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        shoulderleft_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        shoulderright_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        sim_hand_palm:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        thumb_distal:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        thumb_distal_l:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        thumb_meta:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        thumb_meta_0:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        thumb_meta_0_l:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        thumb_meta_l:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        thumb_proximal:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        thumb_proximal_l:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+      Name: RobotModel
+      Robot Description: human/robot_description
+      TF Prefix: ""
+      Update Interval: 0
+      Value: true
+      Visual Enabled: true
+    - Class: rviz/TF
+      Enabled: true
+      Frame Timeout: 15
+      Frames:
+        All Enabled: false
+        armleft1_link:
+          Value: false
+        armleft2_link:
+          Value: false
+        armleft3_link:
+          Value: false
+        armright1_link:
+          Value: false
+        armright2_link:
+          Value: false
+        armright3_link:
+          Value: false
+        back_link:
+          Value: false
+        base:
+          Value: false
+        base_0:
+          Value: false
+        base_0_l:
+          Value: false
+        base_footprint:
+          Value: false
+        base_human_link:
+          Value: false
+        base_l:
+          Value: false
+        base_link:
+          Value: false
+        body_link:
+          Value: false
+        bodyleft_link:
+          Value: false
+        bodyright_link:
+          Value: false
+        chest_link:
+          Value: false
+        footleft_link:
+          Value: false
+        footright_link:
+          Value: false
+        front_left_steer_link:
+          Value: false
+        front_right_steer_link:
+          Value: false
+        handleft_link:
+          Value: false
+        handright_link:
+          Value: false
+        head_link:
+          Value: false
+        index_distal:
+          Value: false
+        index_distal_l:
+          Value: false
+        index_meta:
+          Value: false
+        index_meta_0:
+          Value: false
+        index_meta_0_l:
+          Value: false
+        index_meta_l:
+          Value: false
+        index_middle:
+          Value: false
+        index_middle_l:
+          Value: false
+        index_proximal:
+          Value: false
+        index_proximal_l:
+          Value: false
+        legleft1_link:
+          Value: false
+        legleft2_link:
+          Value: false
+        legleft3_link:
+          Value: false
+        legright1_link:
+          Value: false
+        legright2_link:
+          Value: false
+        legright3_link:
+          Value: false
+        middle_distal:
+          Value: false
+        middle_distal_l:
+          Value: false
+        middle_meta:
+          Value: false
+        middle_meta_0:
+          Value: false
+        middle_meta_0_l:
+          Value: false
+        middle_meta_l:
+          Value: false
+        middle_middle:
+          Value: false
+        middle_middle_l:
+          Value: false
+        middle_proximal:
+          Value: false
+        middle_proximal_l:
+          Value: false
+        pinky_distal:
+          Value: false
+        pinky_distal_l:
+          Value: false
+        pinky_meta:
+          Value: false
+        pinky_meta_0:
+          Value: false
+        pinky_meta_0_l:
+          Value: false
+        pinky_meta_l:
+          Value: false
+        pinky_middle:
+          Value: false
+        pinky_middle_l:
+          Value: false
+        pinky_proximal:
+          Value: false
+        pinky_proximal_l:
+          Value: false
+        rear_left_steer_link:
+          Value: false
+        rear_right_steer_link:
+          Value: false
+        ring_distal:
+          Value: false
+        ring_distal_l:
+          Value: false
+        ring_meta:
+          Value: false
+        ring_meta_0:
+          Value: false
+        ring_meta_0_l:
+          Value: false
+        ring_meta_l:
+          Value: false
+        ring_middle:
+          Value: false
+        ring_middle_l:
+          Value: false
+        ring_proximal:
+          Value: false
+        ring_proximal_l:
+          Value: false
+        shoulderleft_link:
+          Value: false
+        shoulderright_link:
+          Value: false
+        sim_hand_palm:
+          Value: true
+        thumb_distal:
+          Value: false
+        thumb_distal_l:
+          Value: false
+        thumb_meta:
+          Value: false
+        thumb_meta_0:
+          Value: false
+        thumb_meta_0_l:
+          Value: false
+        thumb_meta_l:
+          Value: false
+        thumb_proximal:
+          Value: false
+        thumb_proximal_l:
+          Value: false
+      Marker Scale: 0.5
+      Name: TF
+      Show Arrows: true
+      Show Axes: true
+      Show Names: true
+      Tree:
+        base_human_link:
+          back_link:
+            {}
+          base_footprint:
+            {}
+          body_link:
+            bodyleft_link:
+              legleft1_link:
+                legleft2_link:
+                  legleft3_link:
+                    footleft_link:
+                      {}
+              shoulderleft_link:
+                armleft1_link:
+                  armleft2_link:
+                    armleft3_link:
+                      handleft_link:
+                        base_0_l:
+                          base_l:
+                            index_meta_0_l:
+                              index_meta_l:
+                                index_proximal_l:
+                                  index_middle_l:
+                                    index_distal_l:
+                                      {}
+                            middle_meta_0_l:
+                              middle_meta_l:
+                                middle_proximal_l:
+                                  middle_middle_l:
+                                    middle_distal_l:
+                                      {}
+                            pinky_meta_0_l:
+                              pinky_meta_l:
+                                pinky_proximal_l:
+                                  pinky_middle_l:
+                                    pinky_distal_l:
+                                      {}
+                            ring_meta_0_l:
+                              ring_meta_l:
+                                ring_proximal_l:
+                                  ring_middle_l:
+                                    ring_distal_l:
+                                      {}
+                            thumb_meta_0_l:
+                              thumb_meta_l:
+                                thumb_proximal_l:
+                                  thumb_distal_l:
+                                    {}
+            bodyright_link:
+              legright1_link:
+                legright2_link:
+                  legright3_link:
+                    footright_link:
+                      {}
+              shoulderright_link:
+                armright1_link:
+                  armright2_link:
+                    armright3_link:
+                      handright_link:
+                        base_0:
+                          base:
+                            index_meta_0:
+                              index_meta:
+                                index_proximal:
+                                  index_middle:
+                                    index_distal:
+                                      {}
+                            middle_meta_0:
+                              middle_meta:
+                                middle_proximal:
+                                  middle_middle:
+                                    middle_distal:
+                                      {}
+                            pinky_meta_0:
+                              pinky_meta:
+                                pinky_proximal:
+                                  pinky_middle:
+                                    pinky_distal:
+                                      {}
+                            ring_meta_0:
+                              ring_meta:
+                                ring_proximal:
+                                  ring_middle:
+                                    ring_distal:
+                                      {}
+                            sim_hand_palm:
+                              {}
+                            thumb_meta_0:
+                              thumb_meta:
+                                thumb_proximal:
+                                  thumb_distal:
+                                    {}
+            chest_link:
+              head_link:
+                {}
+          front_left_steer_link:
+            {}
+          front_right_steer_link:
+            {}
+          rear_left_steer_link:
+            {}
+          rear_right_steer_link:
+            {}
+        base_link:
+          {}
+      Update Interval: 0
+      Value: true
+    - Class: rviz/InteractiveMarkers
+      Enable Transparency: true
+      Enabled: true
+      Name: InteractiveMarkers
+      Show Axes: false
+      Show Descriptions: true
+      Show Visual Aids: false
+      Update Topic: /cube/update
+      Value: true
+  Enabled: true
+  Global Options:
+    Background Color: 255; 255; 255
+    Default Light: true
+    Fixed Frame: base_human_link
+    Frame Rate: 30
+  Name: root
+  Tools:
+    - Class: rviz/Interact
+      Hide Inactive Objects: true
+    - Class: rviz/MoveCamera
+    - Class: rviz/Select
+    - Class: rviz/FocusCamera
+    - Class: rviz/Measure
+    - Class: rviz/SetInitialPose
+      Topic: /initialpose
+    - Class: rviz/SetGoal
+      Topic: /move_base_simple/goal
+    - Class: rviz/PublishPoint
+      Single click: true
+      Topic: /clicked_point
+  Value: true
+  Views:
+    Current:
+      Class: rviz/Orbit
+      Distance: 1.76801527
+      Enable Stereo Rendering:
+        Stereo Eye Separation: 0.0599999987
+        Stereo Focal Distance: 1
+        Swap Stereo Eyes: false
+        Value: false
+      Focal Point:
+        X: 0
+        Y: 0
+        Z: 0
+      Focal Shape Fixed Size: true
+      Focal Shape Size: 0.0500000007
+      Invert Z Axis: false
+      Name: Current View
+      Near Clip Distance: 0.00999999978
+      Pitch: 0.410396546
+      Target Frame: <Fixed Frame>
+      Value: Orbit (rviz)
+      Yaw: 0.863545954
+    Saved: ~
+Window Geometry:
+  Displays:
+    collapsed: false
+  Height: 1056
+  Hide Left Dock: false
+  Hide Right Dock: false
+  QMainWindow State: 000000ff00000000fd00000004000000000000016a00000390fc0200000008fb0000001200530065006c0065006300740069006f006e00000001e10000009b0000006100fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c006100790073010000002800000390000000d700fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261000000010000010f00000390fc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a00560069006500770073010000002800000390000000ad00fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e100000197000000030000074700000044fc0100000002fb0000000800540069006d00650100000000000007470000030000fffffffb0000000800540069006d00650100000000000004500000000000000000000004c20000039000000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  Selection:
+    collapsed: false
+  Time:
+    collapsed: false
+  Tool Properties:
+    collapsed: false
+  Views:
+    collapsed: false
+  Width: 1863
+  X: 57
+  Y: 325

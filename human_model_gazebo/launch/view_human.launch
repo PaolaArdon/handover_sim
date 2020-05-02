@@ -1,0 +1,48 @@
+<launch>
+  <!-- start world -->
+  <arg name="gui" default="true" />
+  <include file="$(find gazebo_ros)/launch/empty_world.launch"/>
+
+
+  <arg name="model" default="$(find human_model_gazebo)/urdf/human.xacro"/>
+  <arg name="rvizconfig" default="$(find human_model_gazebo)/rviz/urdf.rviz" />
+  
+  <rosparam file="$(find human_model_gazebo)/config/human_control.yaml" command="load"/>
+
+  
+  <group ns="human">
+
+  <!-- Load joint controller configurations from YAML file to parameter server -->
+  <!-- load the controllers -->
+  <node name="control_spawner" pkg="controller_manager" type="spawner" respawn="false"
+  output="screen" args="joint_state_controller
+                                    bodyright_shoulderright_joint_controller
+                                    shoulderright_armright1_joint_controller
+                                    armright1_armright2_joint_controller
+                                    armrighht3_handright_joint_controller"/>
+
+    <param name="use_gui" value="$(arg gui)"/>
+    <param name="robot_description" command="$(find xacro)/xacro --inorder $(arg model)" />
+
+     <!-- push robot_description to factory and spawn robot in gazebo -->
+    <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
+    args="-urdf -model human -param robot_description -z 0"/>
+
+    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
+
+    <!-- <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" />
+     -->
+                                       
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"
+      respawn="false" output="screen">
+      <remap from="/joint_states" to="joint_states" />
+    </node>
+
+  </group>
+
+  <node pkg="tf" type="static_transform_publisher" name="laser" args="1.1 -0.5 0.4 0 0 1 0 base_link base_human_link 100"/>
+
+
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" required="true" />
+
+</launch>

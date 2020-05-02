@@ -1,0 +1,23 @@
+human:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type:  joint_state_controller/JointStateController
+    publish_rate: 50  
+  
+  # Position Controllers ---------------------------------------
+  bodyright_shoulderright_joint_controller:
+    type: effort_controllers/JointPositionController
+    joint: human/bodyright_shoulderright_joint
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  shoulderright_armright1_joint_controller:
+    type: effort_controllers/JointPositionController
+    joint: shoulderright_armright1_joint
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  armright1_armright2_joint_controller:
+    type: effort_controllers/JointPositionController
+    joint: armright1_armright2_joint
+    pid: {p: 1.0, i: 0.00, d: 0.0}
+  armrighht3_handright_joint_controller:
+    type: effort_controllers/JointPositionController
+    joint: armrighht3_handright_joint
+    pid: {p: 1.0, i: 0.00, d: 0.0}
