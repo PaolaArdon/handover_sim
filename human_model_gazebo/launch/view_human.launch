@@ -7,19 +7,19 @@
   <arg name="model" default="$(find human_model_gazebo)/urdf/human.xacro"/>
   <arg name="rvizconfig" default="$(find human_model_gazebo)/rviz/urdf.rviz" />
   
-  <rosparam file="$(find human_model_gazebo)/config/human_control.yaml" command="load"/>
+  <!-- <rosparam file="$(find human_model_gazebo)/config/human_control.yaml" command="load"/> -->
 
   
   <group ns="human">
 
   <!-- Load joint controller configurations from YAML file to parameter server -->
   <!-- load the controllers -->
-  <node name="control_spawner" pkg="controller_manager" type="spawner" respawn="false"
+  <!-- <node name="control_spawner" pkg="controller_manager" type="spawner" respawn="false"
   output="screen" args="joint_state_controller
                                     bodyright_shoulderright_joint_controller
                                     shoulderright_armright1_joint_controller
                                     armright1_armright2_joint_controller
-                                    armrighht3_handright_joint_controller"/>
+                                    armrighht3_handright_joint_controller"/> -->
 
     <param name="use_gui" value="$(arg gui)"/>
     <param name="robot_description" command="$(find xacro)/xacro --inorder $(arg model)" />

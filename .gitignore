@@ -1,0 +1,4 @@
+human_model_gazebo/src/main.py
+human_model_gazebo/src/moveit_utils.py
+human_model_gazebo/src/other_main_ik.py
+*.pyc

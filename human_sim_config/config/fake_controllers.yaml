@@ -1,0 +1,8 @@
+controller_list:
+  - name: fake_sim_human_arm_r_controller
+    joints:
+      - bodyright_shoulderright_joint
+      - shoulderright_armright1_joint
+      - armright1_armright2_joint
+      - armright2_armright3_joint
+      - armrighht3_handright_joint
