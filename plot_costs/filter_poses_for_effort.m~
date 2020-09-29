@@ -1,0 +1,29 @@
+clc; clear all
+
+%% sampled space 
+opts = detectImportOptions('sampling_poses.txt');
+opts.Delimiter = {' '};
+table=readtable('sampling_poses.txt',opts);
+
+sampled_poses = table2array(table);
+sampled_poses = sampled_poses(:,6:end);
+
+%% middle 
+opts = detectImportOptions('object_safety_poses.txt');
+opts.Delimiter = {' '};
+table=readtable('object_safety_poses.txt',opts);
+
+object_middle = table2array(table);
+
+%% optimal 
+opts = detectImportOptions('object_optimal_poses.txt');
+opts.Delimiter = {' '};
+table=readtable('object_optimal_poses.txt',opts);
+
+object_optimal = table2array(table);
+
+%% check if they are similar (sampled vs optimal and middle)
+
+%dist_between_poses = sqrt(sum((object_middle- sampled_poses) .^ 2, 2));
+[dist, idx] = pdist2(sampled_poses, object_middle,'euclidean','Smallest',1);
+poses_to_calculate_effort = sampled_poses(unique(idx,:);

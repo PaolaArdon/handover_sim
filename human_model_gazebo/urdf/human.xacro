@@ -20,7 +20,31 @@ Robot model taken from http://wiki.ros.org/pr2_mechanism/Tutorials/SImple%20URDF
   <xacro:property name="board_width" value="0.3" /> 
 
   <material name="white">
-    <color rgba="0.1254 0.1254 0.1254 0.8"/>
+    <color rgba="0.45 0.45 0.45 1"/>
+  </material>
+
+  <material name="wood">
+    <color rgba="0.54509 0.2705 0.0745 1"/>
+  </material>
+
+  <material name="black">
+    <color rgba="1 1 1 1"/>
+  </material>
+
+  <material name="green">
+    <color rgba="0.95 0.95 0.95 1"/>
+  </material>
+
+  <material name="pink">
+    <color rgba="1 0.4 1 1"/>
+  </material>
+
+   <material name="orange">
+    <color rgba="0 1 1 1"/>
+  </material>
+
+   <material name="blue">
+    <color rgba="0 0 1 0.5"/>
   </material>
 
   <!-- Links: inertial,visual,collision -->
@@ -34,7 +58,7 @@ Robot model taken from http://wiki.ros.org/pr2_mechanism/Tutorials/SImple%20URDF
       <geometry>
         <box size="${length} ${width} 0.04"/>
       </geometry>
-      <material name="white"/>
+      <material name="wood"/>
     </visual>
     <collision>
       <!-- origin is relative -->
@@ -72,7 +96,7 @@ Robot model taken from http://wiki.ros.org/pr2_mechanism/Tutorials/SImple%20URDF
       <geometry>
         <box size="${human_back_length} ${width} 0.04"/>
       </geometry>
-      <material name="white"/>
+      <material name="wood"/>
     </visual>
     <collision>
       <!-- origin is relative -->
@@ -445,7 +469,7 @@ Robot model taken from http://wiki.ros.org/pr2_mechanism/Tutorials/SImple%20URDF
       <geometry>
         <sphere radius="0.125"/>
       </geometry>
-      <material name="white"/>
+      <material name="black"/>
     </visual>
     <collision>
       <!-- origin is relative -->
@@ -500,9 +524,9 @@ Robot model taken from http://wiki.ros.org/pr2_mechanism/Tutorials/SImple%20URDF
       <geometry>
         <sphere radius="0.05"/>
       </geometry>
-      <material name="white"/>
+      <material name="green"/>
     </visual>
-    <material name="white"/>
+    <material name="green"/>
     <collision>
       <!-- origin is relative -->
       <origin xyz="0 0 0"/>
@@ -531,7 +555,7 @@ Robot model taken from http://wiki.ros.org/pr2_mechanism/Tutorials/SImple%20URDF
       <geometry>
         <cylinder radius="0.05" length="0.25"/>
       </geometry>
-      <material name="white"/>
+      <material name="green"/>
     </visual>
     <collision>
       <!-- origin is relative -->
@@ -592,7 +616,7 @@ Robot model taken from http://wiki.ros.org/pr2_mechanism/Tutorials/SImple%20URDF
       <geometry>
         <sphere radius="0.05"/>
       </geometry>
-      <material name="white"/>
+      <material name="green"/>
     </visual>
     <collision>
       <!-- origin is relative -->
@@ -679,7 +703,7 @@ Robot model taken from http://wiki.ros.org/pr2_mechanism/Tutorials/SImple%20URDF
       <geometry>
         <cylinder radius="0.05" length="0.2"/>
       </geometry>
-      <material name="white"/>
+      <material name="green"/>
     </visual>
     <collision>
       <!-- origin is relative -->
@@ -689,7 +713,7 @@ Robot model taken from http://wiki.ros.org/pr2_mechanism/Tutorials/SImple%20URDF
       </geometry>
     </collision>
   </link>
-  <joint name="armright2_armright3_joint" type="revolute"> <!-- move from elbow down -->
+  <joint name="armright2_armright3_joint" type="fixed"> <!-- move from elbow down -->
       <axis xyz="1 1 1"/>
       <limit effort="1000.0" lower="-0.6" upper="0.6" velocity="0.5"/>
       <origin xyz="-0.065 0 0.11" rpy="0 ${-30 * deg_to_rad} 0"/>
@@ -704,12 +728,12 @@ Robot model taken from http://wiki.ros.org/pr2_mechanism/Tutorials/SImple%20URDF
       <mass value="5"/>
       <inertia ixx="5" ixy="0" ixz="0" iyy="5" iyz="0" izz="5"/>
     </inertial>
-    <!-- <visual>
+    <visual>
       <geometry>
         <sphere radius="0.065"/>
       </geometry>
-      <material name="white"/>
-    </visual> -->
+      <material name="green"/>
+    </visual>
     <collision>
       <!-- origin is relative -->
       <origin xyz="0 0 0"/>

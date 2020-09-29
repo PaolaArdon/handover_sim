@@ -5,7 +5,7 @@
   <xacro:property name="steer_velocity" value="5.0"/>
 
   <material name="gray">
-    <color rgba="0.1254 0.1254 0.1254 0.8"/>
+    <color rgba="0.54509 0.2705 0.0745 1"/>
   </material>
 
 

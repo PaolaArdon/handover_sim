@@ -1,7 +1,7 @@
 <launch>
  
  <arg name="model" default="$(find objects_to_handover)/urdf/bottle.xacro"/>
- <arg name="rvizconfig" default="$(find objects_to_handover)/rviz/urdf.rviz" />
+ <!-- <arg name="rvizconfig" default="$(find objects_to_handover)/rviz/urdf.rviz" /> -->
 
 <group ns="ns1">
   <param name="robot_description" command="$(find xacro)/xacro --inorder $(arg model)" />
@@ -11,8 +11,10 @@
   
 </group>
 
-<node pkg="tf" type="static_transform_publisher" name="laser" args="0.35 0 0 0 -1.0 0 1 r_gripper_r_finger_tip_link object 100"/>
+<node pkg="tf" type="static_transform_publisher" name="laser" args="0.15 0.05 0.05 0 -0.9 0 1 r_gripper_r_finger_tip_link object 100"/>
+<!-- <node pkg="tf" type="static_transform_publisher" name="laser" args="0.06 0.06 0.0 0 0 0 1 r_gripper_r_finger_tip_link object 100"/> -->
+<!-- <node pkg="tf" type="static_transform_publisher" name="laser" args="0.55 -0.52 0.9 0 0 1 0 world object 100"/> -->
 
-<node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" required="true" />
+<!-- <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" required="true" /> -->
 
 </launch>

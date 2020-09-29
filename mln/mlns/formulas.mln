@@ -1,0 +1,11 @@
+//predicates
+handover(preferences)
+withAffordance(affordances)
+armMobility(levels)
+hasShape(cluster,shape)
+isA(cluster,category)
+hasAffordance(cluster,affordance)
+graspRegion(cluster,region)
+
+//formulas
+0 hasShape(?c, +?s) ^ isA(?c, +?cat) ^ hasAffordance(?c, +?a) ^ graspRegion(?c, +?g) ^ handover(+?h) ^ armMobility(+?m)

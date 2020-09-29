@@ -6,12 +6,11 @@
 
   <arg name="model" default="$(find human_model_gazebo)/urdf/human.xacro"/>
   <arg name="rvizconfig" default="$(find human_model_gazebo)/rviz/urdf.rviz" />
-  
+
   <!-- <rosparam file="$(find human_model_gazebo)/config/human_control.yaml" command="load"/> -->
 
-  
-  <group ns="human">
 
+  <group ns="ns0">
   <!-- Load joint controller configurations from YAML file to parameter server -->
   <!-- load the controllers -->
   <!-- <node name="control_spawner" pkg="controller_manager" type="spawner" respawn="false"
@@ -32,7 +31,7 @@
 
     <!-- <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" />
      -->
-                                       
+
     <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"
       respawn="false" output="screen">
       <remap from="/joint_states" to="joint_states" />
