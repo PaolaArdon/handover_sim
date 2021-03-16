@@ -4,7 +4,7 @@
 @article{ardon2021affordanceAware,
   title={Affordance-Aware Handovers with Human Arm Mobility Constraints},
   author={Ard{\'o}n, Paola and Cabrera, Maria, and Pairet, {\`E}ric and Petrick, Ronald PA and Ramamoorthy, Subramanian and Lohan, Katrin S and Cakmak, Maya},
-  journal={IEEE Robotics and Automation Letters},
+  journal={IEEE Robotics and Automation Letters with presentation on ICRA},
   year={2021},
   publisher={IEEE},
   doi = {10.1109/LRA.2021.3062808}
